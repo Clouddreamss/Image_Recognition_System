@@ -3,7 +3,7 @@ import numpy as np
 
 
 def rgb_to_hsv(rgb_color):
-    # 将RGB颜色值转换成0到1之间的浮点数
+
     rgb_color_np = np.uint8([[rgb_color]])
 
     # 使用cv2.cvtColor将RGB颜色空间转换为HSV颜色空间
@@ -12,7 +12,7 @@ def rgb_to_hsv(rgb_color):
     return hsv_color[0][0]
 
 
-# 示例：将RGB颜色(255, 0, 0)转换为HSV
+
 rgb_color = (219, 196, 155)  # 红色
 hsv_color = rgb_to_hsv(rgb_color)
 

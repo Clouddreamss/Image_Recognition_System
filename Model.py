@@ -27,10 +27,10 @@ def analyze_color_coverage(image_path, color_range_lower, color_range_upper):
     return coverage
 
 
-# 定义要分析的颜色范围，例如蓝色的HSV范围
+
 color_range_lower = np.array([9, 34, 174])
 color_range_upper = np.array([65, 90, 255])
 
 # 调用函数
-coverage = analyze_color_coverage('D:/Desktop/IRS/Image_Recognition_System/TestingPic/test.jpg', color_range_lower, color_range_upper)
+coverage = analyze_color_coverage('./TestingPic/test.jpg', color_range_lower, color_range_upper)
 print(f"Color coverage: {coverage * 100}%")

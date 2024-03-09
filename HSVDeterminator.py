@@ -5,7 +5,7 @@ def nothing(x):
     pass
 
 # Load image
-image = cv2.imread('D:/Desktop/IRS/Image_Recognition_System/TestingPic/test.jpg')
+image = cv2.imread('./TestingPic/test.jpg')
 
 # Create a window
 cv2.namedWindow('image',cv2.WINDOW_NORMAL)

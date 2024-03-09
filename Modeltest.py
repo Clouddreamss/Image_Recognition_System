@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-img = cv2.imread("D:/Desktop/IRS/Image_Recognition_System/TestingPic/test.jpg")
+img = cv2.imread("./TestingPic/test.jpg")
 
 hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
 
