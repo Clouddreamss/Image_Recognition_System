@@ -1,5 +1,6 @@
 import cv2
 import numpy as np
+import PercentageConverter as pct
 
 
 def analyze_color_coverage(image_path, color_range_lower, color_range_upper):
@@ -32,5 +33,6 @@ color_range_lower = np.array([9, 34, 174])
 color_range_upper = np.array([65, 90, 255])
 
 # 调用函数
+
 coverage = analyze_color_coverage('./TestingPic/test.jpg', color_range_lower, color_range_upper)
-print(f"Color coverage: {coverage * 100}%")
+print(f"Color coverage: {pct.rescale_percentage(coverage * 100)}%")
