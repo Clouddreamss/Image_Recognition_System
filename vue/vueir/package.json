@@ -11,7 +11,7 @@
     "core-js": "^3.8.3",
     "element-ui": "^2.15.14",
     "vue": "^2.6.14",
-    "vue-router": "^3.5.1",
+    "vue-router": "^3.6.5",
     "vuex": "^3.6.2"
   },
   "devDependencies": {
@@ -29,7 +29,7 @@
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-vue": "^8.0.3",
     "less": "^4.0.0",
-    "less-loader": "^8.0.0",
+    "less-loader": "^6.0.0",
     "vue-template-compiler": "^2.6.14"
   },
   "eslintConfig": {
@@ -45,16 +45,22 @@
       "parser": "@babel/eslint-parser"
     },
     "rules": {
-      "indent":["off",2],
-      "semi":0,
-      "quotes":"off",
-      "comma-dangle":"off"
- 
+      "indent": [
+        "off",
+        2
+      ],
+      "semi": 0,
+      "quotes": "off",
+      "comma-dangle": "off"
     }
   },
   "browserslist": [
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "browser": {
+    "path": false
+  }
+
 }
